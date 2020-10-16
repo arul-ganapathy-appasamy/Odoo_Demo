@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+ <menuitem
+            id="menu_advance_root"
+            name="Advance"
+            groups="group_advance_user,base.group_user"
+            sequence="2"/>
+         <menuitem
+                id="menu_loan_request"
+                name="Loan Request"
+                action="open_view_loan_request_check_form"
+                groups="group_advance_user"
+                parent="menu_advance_root"
+                sequence="1"/>
+
+        <menuitem
+            id="menu_loan_request"
+            name="Loan Request"
+            action="open_view_loan_request_check_form"
+            groups="group_advance_user"
+            parent="menu_advance_root"
+            sequence="2"/>
+         <menuitem
+            id="menu_emi_adjustment"
+            name="EMI Adjustment"
+            action="open_view_loan_request_check_form"
+            groups="group_advance_user"
+            parent="menu_advance_root"
+            sequence="3"/>
+        <menuitem
+            id="menu_emi_pospond"
+            name="EMI Pospond"
+            action="open_view_loan_request_check_form"
+            groups="group_advance_user"
+            parent="menu_advance_root"
+            sequence="4"/>
+        <menuitem
+            id="menu_emi_preclosure"
+            name="EMI Preclosure"
+            action="open_view_loan_request_check_form"
+            groups="group_advance_user"
+            parent="menu_advance_root"
+            sequence="5"/>
+  </data>
+</odoo>

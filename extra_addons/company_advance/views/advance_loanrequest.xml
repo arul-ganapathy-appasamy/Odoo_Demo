@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data>
+        <!-- window action -->
+        <!--
+            The following tag is an action definition for a "window action",
+            that is an action opening a view or a set of views
+        -->
+    <record id="loanrequest_form" model="ir.ui.view">
+        <field name="name">loanrequest.form</field>
+        <field name="model">loan.request</field>
+        <field name="arch" type="xml">
+            <form string="Loan Request">
+                <group>
+                <field name="first_name"></field>
+                <field name="employee_id"></field>
+                 <field name="advance_type"></field>
+                </group>
+            </form>
+        </field>
+    </record>
+        <record model="ir.actions.act_window" id="open_view_loan_request_check_form">
+            <field name="name">LoanRequest</field>
+            <field name="res_model">loan.request</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Create Loan Request
+                </p>
+            </field>
+        </record>
+
+
+</data>
+</odoo>
